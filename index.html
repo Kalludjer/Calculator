@@ -14,36 +14,32 @@
             <tr>
                 <td colspan="3"><input type="text" id="result" class="screen" style="text-align: right;"></td>
              <td>
-                <input type="button" value="C" onclick="clearScreen()" class="clear"/>
+                <input type="button" value="C" onclick="clearScreen()" class="clear">
              </td>
             </tr>
         </table>
 
         <div class="keys">
-            <div class="upper">
-              <div class="numbers">  
+            
                 <input type="button" value="1" class="button" onClick="display('1')"></input>
                 <input type="button" value="2" class="button" onClick="display('2')"></input>
                 <input type="button" value="3" class="button" onClick="display('3')"></input>
+                <input type="button" value="*" class="operator" onClick="('*')"></input>
                 <input type="button" value="4" class="button" onClick="display('4')"></input>
                 <input type="button" value="5" class="button" onClick="display('5')"></input>
                 <input type="button" value="6" class="button" onClick="display('6')"></input>
+                <input type="button" value="/" class="operator" onClick="('/')"></input>
                 <input type="button" value="7" class="button" onClick="display('7')"></input>
-                <input type="button" value="8" class="button" onClick="display('8')"></input>
-                <input type="button" value="9" class="button" onClick="display('9')"></input>
-              </div>
-              <div class="opera">
-                <input type="button" value="*" class="operator" ocClick="('*')"></input>
-                <input type="button" value="/" class="operator" ocClick="('/')"></input>
+             
+                <input type="button" value="8" class="button" ocClick="display('8')"></input>
+                <input type="button" value="9" class="button" ocClick="display('9')"></input>
                 <input type="button" value="+" class="operator" ocClick="('+')"></input>
-                <input type="button" value="-" class="operator" ocClick="('-')"></input>
-              </div>
-            </div>
-            <div class="lower">
-                <input type="button" value="0" class="button" ocClick="display('0')"></input>
-                <input type="button" value="." class="button" ocClick="display('.')"></input>
                 <input type="button" value="=" class="button equal-sign" ocClick="('solve()')"></input>
-            </div>
+             
+                <input type="button" value="0" class="button" ocClick="display('0')"></input>
+                <input type="button" value="." class="button dot" ocClick="display('.')"></input>
+                <input type="button" value="-" class="operator" ocClick="('-')"></input>
+            
         </div>
     </div>
     <script src="/main.js"></script>
