@@ -2,10 +2,17 @@
     margin: 0;
     padding: 0;
    }
+
+   body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center ;
+   }
    
    .container {
-       top: 25%;
-       left: 40%;
        border: 5px solid #cccccc;
        box-shadow: 10px 10px 30px 0px rgba(0,0,0,0.75);
        border-radius: 15px;
@@ -13,6 +20,10 @@
        height: 600px;
        width: 400px;
        background-color: rgb(107, 101, 101);
+   }
+
+   .first-row {
+    display: flex;
    }
 
    .screen {
@@ -25,6 +36,10 @@
     font-size: 32px;
     border-radius: 4px;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
    }
 
    .clear {
@@ -101,4 +116,12 @@
 
    .dot:hover {
     background-color: blue;
+   }
+
+   .previous {
+    font-size: 20px;
+   }
+
+   .current {
+    font-size: 30px;
    }
